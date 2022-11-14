@@ -1,1 +1,18 @@
-(function () {\n    'use strict';\n\n    var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {\n        var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;\n        if (typeof Reflect === \"object\" && typeof Reflect.decorate === \"function\") r = Reflect.decorate(decorators, target, key, desc);\n        else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;\n        return c > 3 && r && Object.defineProperty(target, key, r), r;\n    };\n    class ClientSpecificWebworker {\n        script1(ctx) { n; n; }\n    } // ctx.dispatch() ->  window.postMessage('', {})\\n        \\n        // ctx.dispatch()\\n        // ctx.updateRecord({first_name: 'john'})\\n        \\n        // window.postMessage('', {})\\n    }\\n    \\n    script2() {}\\n}\n    __decorate([\n        Record()\n    ], ClientSpecificWebworker.prototype, \"record\", void 0);\n    __decorate([\n        RecordUpdated()\n    ], ClientSpecificWebworker.prototype, \"recordUpdated$\", void 0);\n\n})();\n
+(function (exports) {
+    'use strict';
+
+    class ClientSpecificWebworker {
+        constructor() { }
+        script1() {
+            console.log('test');
+        }
+    }
+
+    exports.ClientSpecificWebworker = ClientSpecificWebworker;
+
+    Object.defineProperty(exports, '__esModule', { value: true });
+
+    return exports;
+
+})({});
+
